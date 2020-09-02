@@ -6,11 +6,11 @@ public class Main {
 
         while (true) {
             TriangleNumber triangleNumber = new TriangleNumber(n);
-            System.out.println(triangleNumber.number);
             if (triangleNumber.numberOfFactors() > 500) {
                 System.out.println(triangleNumber);
                 break;
             }
+            n++;
         }
     }
 }
