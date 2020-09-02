@@ -1,19 +1,19 @@
+import java.math.BigInteger;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        int limit = 1000000;
-        CollatzSequence longestChainSoFar = new CollatzSequence(1);
+        int sum = 0;
+        int power = 1000;
+        BigInteger number = BigInteger.TWO;
+        number = number.pow(power);
 
-        for (int i = 2; i < limit; i++) {
-            CollatzSequence collatzSequence = new CollatzSequence(i);
-            if (collatzSequence.compareTo(longestChainSoFar) > 0) {
-                longestChainSoFar = collatzSequence;
-            }
-            System.out.println(i);
+        String numberAsString = number.toString();
+
+        for (int i = 0; i < numberAsString.length(); i++) {
+            sum += Character.getNumericValue(numberAsString.charAt(i));
         }
-
-        System.out.println(longestChainSoFar);
-
+        System.out.println(sum);
     }
 }
