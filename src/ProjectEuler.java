@@ -1,13 +1,12 @@
-import Problems_10_19.Problem_10;
-import Problems_10_19.Problem_11;
-import Problems_10_19.Problem_12;
-import Problems_10_19.Problem_13;
+import Problems_10_19.*;
+import Problems_20_29.Problem_22;
+import Problems_20_29.Problem_25;
 
 public class ProjectEuler {
 
     public static void main(String[] args) {
 
-        Problem_13 problem = new Problem_13();
+        Problem_15 problem = new Problem_15();
         System.out.println(problem.calculateResult());
     }
 }
