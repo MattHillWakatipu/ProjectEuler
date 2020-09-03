@@ -4,8 +4,7 @@ package Utility;
  * Utility.TriangleNumber class for problem 12.
  */
 public class TriangleNumber {
-
-    long number = 0;
+    private long number = 0;
 
     /**
      * Constructor for Utility.TriangleNumber, creates the nth natural number via iteration.
@@ -39,6 +38,10 @@ public class TriangleNumber {
         }
 
         return count;
+    }
+
+    public long getNumber() {
+        return number;
     }
 
     @Override
