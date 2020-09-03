@@ -3,6 +3,9 @@ package Problems_10_19;
 import java.math.BigInteger;
 import java.util.Scanner;
 
+/**
+ * Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+ */
 public class Problem_13 {
 
     public String calculateResult() {
