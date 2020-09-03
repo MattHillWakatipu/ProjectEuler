@@ -1,5 +1,7 @@
+package Utility;
+
 /**
- * CollatzSequence class for problem 14.
+ * Utility.CollatzSequence class for problem 14.
  */
 public class CollatzSequence implements Comparable<CollatzSequence> {
 
@@ -7,9 +9,9 @@ public class CollatzSequence implements Comparable<CollatzSequence> {
     private final long chainLength;
 
     /**
-     * Constructor for CollatzSequence.
+     * Constructor for Utility.CollatzSequence.
      *
-     * @param startingNumber Starting number to create a CollatzSequence from.
+     * @param startingNumber Starting number to create a Utility.CollatzSequence from.
      */
     public CollatzSequence(int startingNumber) {
         this.startingNumber = startingNumber;
@@ -17,9 +19,9 @@ public class CollatzSequence implements Comparable<CollatzSequence> {
     }
 
     /**
-     * Calculate the chain length of the CollatzSequence.
+     * Calculate the chain length of the Utility.CollatzSequence.
      *
-     * @return ChainLength of the CollatzSequence.
+     * @return ChainLength of the Utility.CollatzSequence.
      */
     private long calculateChainLength() {
         int count = 1;
@@ -35,7 +37,7 @@ public class CollatzSequence implements Comparable<CollatzSequence> {
      * Calculates the next number in collatz sequence.
      * If passed number is even, divide by 2, otherwise times by 3 and add 1.
      *
-     * @param num Number to calculate next from.
+     * @param num Utility.Number to calculate next from.
      * @return Next number in Collatz sequence.
      */
     private long nextNumberInSequence(long num) {
@@ -63,7 +65,7 @@ public class CollatzSequence implements Comparable<CollatzSequence> {
 
     @Override
     public String toString() {
-        return "CollatzSequence{" +
+        return "Utility.CollatzSequence{" +
                 "startingNumber=" + startingNumber +
                 ", chainLength=" + chainLength +
                 '}';

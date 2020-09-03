@@ -1,3 +1,5 @@
+package Utility;
+
 /**
  * Representation of a Fibonacci number.
  */
@@ -6,9 +8,9 @@ public class FibonacciNumber {
     private final int number;
 
     /**
-     * Constructor for a FibonacciNumber, creates fibonacci number with recursive call.
+     * Constructor for a Utility.FibonacciNumber, creates fibonacci number with recursive call.
      *
-     * @param n nth FibonacciNumber.
+     * @param n nth Utility.FibonacciNumber.
      */
     public FibonacciNumber(int n) {
         number = createFib(n);

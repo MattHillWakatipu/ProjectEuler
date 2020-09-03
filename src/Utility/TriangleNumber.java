@@ -1,12 +1,14 @@
+package Utility;
+
 /**
- * TriangleNumber class for problem 12.
+ * Utility.TriangleNumber class for problem 12.
  */
 public class TriangleNumber {
 
     long number = 0;
 
     /**
-     * Constructor for TriangleNumber, creates the nth natural number via iteration.
+     * Constructor for Utility.TriangleNumber, creates the nth natural number via iteration.
      *
      * @param n nth triangle number to create.
      */
@@ -19,7 +21,7 @@ public class TriangleNumber {
     /**
      * Calculate how many factors the triangle number has.
      *
-     * @return Number of factors.
+     * @return Utility.Number of factors.
      */
     public int numberOfFactors() {
 
@@ -41,7 +43,7 @@ public class TriangleNumber {
 
     @Override
     public String toString() {
-        return "TriangleNumber{" +
+        return "Utility.TriangleNumber{" +
                 "number=" + number +
                 '}';
     }

@@ -1,5 +1,7 @@
+package Utility;
+
 /**
- * Number class for use in ProjectEuler problems.
+ * Utility.Number class for use in ProjectEuler problems.
  */
 public class Number {
 
