@@ -5,6 +5,10 @@ package Utility;
  */
 public class Number {
 
+    public Number(int number) {
+        this.number = number;
+    }
+
     int number;
 
     /**
@@ -12,7 +16,7 @@ public class Number {
      *
      * @return True if number is prime, otherwise false.
      */
-    boolean isPrime() {
+    public boolean isPrime() {
 
         //Case 1: Less than 2, not prime.
         if (number < 2) {
@@ -45,7 +49,7 @@ public class Number {
      *
      * @return True if number is prime, otherwise false.
      */
-    boolean untestedIsPrime() {
+    public boolean untestedIsPrime() {
 
         //Case 1: Less than 2, not prime.
         if (number < 2) {
