@@ -58,6 +58,15 @@ public class CollatzSequence implements Comparable<CollatzSequence> {
         return chainLength;
     }
 
+    /**
+     * Getter for startingNumber.
+     *
+     * @return startingNumber.
+     */
+    public long getStartingNumber() {
+        return startingNumber;
+    }
+
     @Override
     public int compareTo(CollatzSequence o) {
         return (int) (this.getChainLength() - o.getChainLength());
