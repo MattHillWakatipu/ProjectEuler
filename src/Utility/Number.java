@@ -5,18 +5,18 @@ package Utility;
  */
 public class Number {
 
+    int number;
+
     public Number(int number) {
         this.number = number;
     }
-
-    int number;
 
     /**
      * Checks whether the number is prime.
      *
      * @return True if number is prime, otherwise false.
      */
-    public boolean isPrime() {
+    public boolean naiveIsPrime() {
 
         //Case 1: Less than 2, not prime.
         if (number < 2) {
@@ -43,13 +43,12 @@ public class Number {
         return true;
     }
 
-    //TODO More efficient version? Need to check.
     /**
      * Checks whether the number is prime.
      *
      * @return True if number is prime, otherwise false.
      */
-    public boolean untestedIsPrime() {
+    public boolean isPrime() {
 
         //Case 1: Less than 2, not prime.
         if (number < 2) {
@@ -67,7 +66,7 @@ public class Number {
         }
 
         //Case 4: Need to check if prime
-        int squareRoot = (int) Math.sqrt(number);   //TODO check if this needs to be Math.sqrt(number) + 1
+        int squareRoot = (int) Math.sqrt(number) + 1;
         for (int i = 6; i <= squareRoot; i += 6) {// loop 6 step
             if (number % (i - 1) == 0 || number % (i + 1) == 0) {
                 return false;
