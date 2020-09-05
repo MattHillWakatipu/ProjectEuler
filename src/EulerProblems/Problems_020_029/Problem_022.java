@@ -1,4 +1,6 @@
-package Problems_20_29;
+package EulerProblems.Problems_020_029;
+
+import EulerProblems.EulerProblem;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -17,9 +19,10 @@ import java.util.Scanner;
  *
  * What is the total of all the name scores in the file?
  */
-public class Problem_022 {
+public class Problem_022 implements EulerProblem {
 
-    public long calculateResult() {
+    @Override
+    public String calculateResult() {
         long totalScore = 0;
 
         ArrayList<String> names = readNamesFromFile();
@@ -33,7 +36,7 @@ public class Problem_022 {
             totalScore += calculateNameScore(name, i + 1);
         }
 
-        return totalScore;
+        return String.valueOf(totalScore);
     }
 
 
@@ -51,7 +54,7 @@ public class Problem_022 {
     public static ArrayList<String> readNamesFromFile() {
         ArrayList<String> names = new ArrayList<>();
         try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("src/Problems_20_29/problem22_names.txt"));
+            BufferedReader bufferedReader = new BufferedReader(new FileReader("src/EulerProblems/Problems_020_029/problem_022_names.txt"));
             Scanner fileScanner = new Scanner(bufferedReader);
             String fileAsString = fileScanner.next();
             fileAsString = fileAsString.substring(1, fileAsString.length() - 1);
