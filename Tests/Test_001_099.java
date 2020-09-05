@@ -95,7 +95,7 @@ class Test_001_099 {
 
     @Test
     void test_018() {
-        assertEquals(null, new Problem_018().calculateResult());
+        assertEquals("1074", new Problem_018().calculateResult());
     }
 
     @Test
