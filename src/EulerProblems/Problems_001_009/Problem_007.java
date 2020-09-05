@@ -10,6 +10,7 @@ import Utility.Number;
  */
 public class Problem_007 implements EulerProblem {
 
+    @Override
     public String calculateResult() {
         int count = 0;
         int n = 1;

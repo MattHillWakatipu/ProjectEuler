@@ -10,6 +10,7 @@ import EulerProblems.EulerProblem;
  */
 public class Problem_004 implements EulerProblem {
 
+    @Override
     public String calculateResult() {
         int limit = 999;
         int largestSoFar = 1;

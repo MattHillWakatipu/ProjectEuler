@@ -9,6 +9,7 @@ import EulerProblems.EulerProblem;
  */
 public class Problem_003 implements EulerProblem {
 
+    @Override
     public String calculateResult() {
 
         long number = 600_851_475_143L;

@@ -1,4 +1,6 @@
-package Problems_20_29;
+package EulerProblems.Problems_020_029;
+
+import EulerProblems.EulerProblem;
 
 import java.math.BigInteger;
 
@@ -24,9 +26,11 @@ import java.math.BigInteger;
  *
  * What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
  */
-public class Problem_025 {
+public class Problem_025 implements EulerProblem {
 
-    public int calculateResult() {
+    @Override
+    public String calculateResult() {
+
         BigInteger limit = (new BigInteger("10")).pow(999);
         BigInteger[] fibNumbers = new BigInteger[3];
 
@@ -42,6 +46,6 @@ public class Problem_025 {
             n++;
         }
 
-        return n;
+        return String.valueOf(n);
     }
 }

@@ -13,6 +13,7 @@ import EulerProblems.EulerProblem;
  */
 public class Problem_009 implements EulerProblem {
 
+    @Override
     public String calculateResult() {
         int limit = 1000;
 

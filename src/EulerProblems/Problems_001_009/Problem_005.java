@@ -9,6 +9,7 @@ import EulerProblems.EulerProblem;
  */
 public class Problem_005 implements EulerProblem {
 
+    @Override
     public String calculateResult() {
         int largestDivisor = 20;
         int result = 0;

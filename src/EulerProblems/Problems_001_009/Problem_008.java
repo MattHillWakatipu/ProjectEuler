@@ -9,6 +9,7 @@ import EulerProblems.EulerProblem;
  */
 public class Problem_008 implements EulerProblem {
 
+    @Override
     public String calculateResult() {
 
         long largestSoFar = 0;
