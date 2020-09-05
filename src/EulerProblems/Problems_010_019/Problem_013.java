@@ -1,4 +1,6 @@
-package EulerProblems.Problems_10_19;
+package EulerProblems.Problems_010_019;
+
+import EulerProblems.EulerProblem;
 
 import java.math.BigInteger;
 import java.util.Scanner;
@@ -6,8 +8,9 @@ import java.util.Scanner;
 /**
  * Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
  */
-public class Problem_013 {
+public class Problem_013 implements EulerProblem {
 
+    @Override
     public String calculateResult() {
 
         String bigNumbers =     "37107287533902102798797998220837590246510135740250\n" +

@@ -1,5 +1,6 @@
-package EulerProblems.Problems_10_19;
+package EulerProblems.Problems_010_019;
 
+import EulerProblems.EulerProblem;
 import Utility.CollatzSequence;
 
 /**
@@ -18,9 +19,10 @@ import Utility.CollatzSequence;
  *
  * NOTE: Once the chain starts the terms are allowed to go above one million.
  */
-public class Problem_014 {
+public class Problem_014 implements EulerProblem {
 
-    public long calculateResult() {
+    @Override
+    public String calculateResult() {
 
         int limit = 1000000;
         CollatzSequence longestChainSoFar = new CollatzSequence(1);
@@ -32,6 +34,6 @@ public class Problem_014 {
             }
         }
 
-        return longestChainSoFar.getStartingNumber();
+        return String.valueOf(longestChainSoFar.getStartingNumber());
     }
 }

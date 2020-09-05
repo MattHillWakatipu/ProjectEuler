@@ -1,5 +1,6 @@
-package EulerProblems.Problems_10_19;
+package EulerProblems.Problems_010_019;
 
+import EulerProblems.EulerProblem;
 import Utility.TriangleNumber;
 
 /**
@@ -21,15 +22,17 @@ import Utility.TriangleNumber;
  *
  * What is the value of the first triangle number to have over five hundred divisors?
  */
-public class Problem_012 {
-    public long calculateResult() {
+public class Problem_012 implements EulerProblem {
+
+    @Override
+    public String calculateResult() {
 
         int n = 1;
 
         while (true) {
             TriangleNumber triangleNumber = new TriangleNumber(n);
             if (triangleNumber.numberOfFactors() > 500) {
-                return triangleNumber.getNumber();
+                return String.valueOf(triangleNumber.getNumber());
             }
             n++;
         }

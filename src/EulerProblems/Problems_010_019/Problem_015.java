@@ -1,4 +1,4 @@
-package EulerProblems.Problems_10_19;
+package EulerProblems.Problems_010_019;
 
 import EulerProblems.EulerProblem;
 
@@ -10,6 +10,7 @@ import EulerProblems.EulerProblem;
  */
 public class Problem_015 implements EulerProblem {
 
+    @Override
     public String calculateResult() {
 
         int n = 20;

@@ -1,4 +1,6 @@
-package EulerProblems.Problems_10_19;
+package EulerProblems.Problems_010_019;
+
+import EulerProblems.EulerProblem;
 
 import java.math.BigInteger;
 
@@ -7,9 +9,10 @@ import java.math.BigInteger;
  *
  * What is the sum of the digits of the number 21000?
  */
-public class Problem_016 {
+public class Problem_016 implements EulerProblem {
 
-    public int calculateResult() {
+    @Override
+    public String calculateResult() {
 
         int sum = 0;
         int power = 1000;
@@ -22,6 +25,6 @@ public class Problem_016 {
             sum += Character.getNumericValue(numberAsString.charAt(i));
         }
 
-        return sum;
+        return String.valueOf(sum);
     }
 }

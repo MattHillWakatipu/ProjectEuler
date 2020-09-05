@@ -1,5 +1,6 @@
-package EulerProblems.Problems_10_19;
+package EulerProblems.Problems_010_019;
 
+import EulerProblems.EulerProblem;
 import Utility.Number;
 
 /**
@@ -7,8 +8,10 @@ import Utility.Number;
  *
  * Find the sum of all the primes below two million.
  */
-public class Problem_010 {
-    public long calculateResult() {
+public class Problem_010 implements EulerProblem {
+
+    @Override
+    public String calculateResult() {
 
         int limit = 2_000_000;
         long sum = 0;
@@ -20,6 +23,6 @@ public class Problem_010 {
             }
         }
 
-        return sum;
+        return String.valueOf(sum);
     }
 }

@@ -1,4 +1,6 @@
-package EulerProblems.Problems_10_19;
+package EulerProblems.Problems_010_019;
+
+import EulerProblems.EulerProblem;
 
 import java.util.Scanner;
 
@@ -31,9 +33,10 @@ import java.util.Scanner;
  * What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally)
  * in the 20×20 grid?
  */
-public class Problem_011 {
+public class Problem_011 implements EulerProblem {
 
-    public long calculateResult() {
+    @Override
+    public String calculateResult() {
         int gridSize = 20;
         long largestSoFar = 0;
 
@@ -78,7 +81,7 @@ public class Problem_011 {
                 }
             }
         }
-        return largestSoFar;
+        return String.valueOf(largestSoFar);
     }
 
     private int[][] createGrid(int gridSize) {
