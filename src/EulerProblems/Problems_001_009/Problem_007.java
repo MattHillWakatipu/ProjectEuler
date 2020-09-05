@@ -1,5 +1,6 @@
-package Problems_01_09;
+package EulerProblems.Problems_001_009;
 
+import EulerProblems.EulerProblem;
 import Utility.Number;
 
 /**
@@ -7,9 +8,9 @@ import Utility.Number;
  *
  * What is the 10 001st prime number?
  */
-public class Problem_07 {
+public class Problem_007 implements EulerProblem {
 
-    public int calculateResult() {
+    public String calculateResult() {
         int count = 0;
         int n = 1;
 
@@ -19,6 +20,6 @@ public class Problem_07 {
                 count++;
             }
         }
-        return n;
+        return String.valueOf(n);
     }
 }

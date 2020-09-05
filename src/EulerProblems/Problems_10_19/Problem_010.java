@@ -1,4 +1,4 @@
-package Problems_10_19;
+package EulerProblems.Problems_10_19;
 
 import Utility.Number;
 
@@ -7,7 +7,7 @@ import Utility.Number;
  *
  * Find the sum of all the primes below two million.
  */
-public class Problem_10 {
+public class Problem_010 {
     public long calculateResult() {
 
         int limit = 2_000_000;

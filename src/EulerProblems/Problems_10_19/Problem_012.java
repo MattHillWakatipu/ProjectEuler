@@ -1,4 +1,4 @@
-package Problems_10_19;
+package EulerProblems.Problems_10_19;
 
 import Utility.TriangleNumber;
 
@@ -21,7 +21,7 @@ import Utility.TriangleNumber;
  *
  * What is the value of the first triangle number to have over five hundred divisors?
  */
-public class Problem_12 {
+public class Problem_012 {
     public long calculateResult() {
 
         int n = 1;

@@ -24,7 +24,7 @@ import java.math.BigInteger;
  *
  * What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
  */
-public class Problem_25 {
+public class Problem_025 {
 
     public int calculateResult() {
         BigInteger limit = (new BigInteger("10")).pow(999);

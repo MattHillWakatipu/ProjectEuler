@@ -1,4 +1,6 @@
-package Problems_01_09;
+package EulerProblems.Problems_001_009;
+
+import EulerProblems.EulerProblem;
 
 /**
  * If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
@@ -6,9 +8,9 @@ package Problems_01_09;
  *
  * Find the sum of all the multiples of 3 or 5 below 1000.
  */
-public class Problem_01 {
+public class Problem_001 implements EulerProblem {
 
-    public int calculateResult() {
+    public String calculateResult() {
         int limit = 1000;
         int sum = 0;
 
@@ -18,6 +20,6 @@ public class Problem_01 {
             }
         }
 
-        return sum;
+        return String.valueOf((sum));
     }
 }

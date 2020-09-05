@@ -1,4 +1,6 @@
-package Problems_01_09;
+package EulerProblems.Problems_001_009;
+
+import EulerProblems.EulerProblem;
 
 /**
  * A palindromic number reads the same both ways.
@@ -6,9 +8,9 @@ package Problems_01_09;
  *
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
-public class Problem_04 {
+public class Problem_004 implements EulerProblem {
 
-    public int calculateResult() {
+    public String calculateResult() {
         int limit = 999;
         int largestSoFar = 1;
 
@@ -22,7 +24,7 @@ public class Problem_04 {
                 }
             }
         }
-        return largestSoFar;
+        return String.valueOf((largestSoFar));
     }
 
     private boolean isPalindrome(int number) {

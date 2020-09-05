@@ -1,4 +1,4 @@
-package Problems_10_19;
+package EulerProblems.Problems_10_19;
 
 import Utility.CollatzSequence;
 
@@ -18,7 +18,7 @@ import Utility.CollatzSequence;
  *
  * NOTE: Once the chain starts the terms are allowed to go above one million.
  */
-public class Problem_14 {
+public class Problem_014 {
 
     public long calculateResult() {
 

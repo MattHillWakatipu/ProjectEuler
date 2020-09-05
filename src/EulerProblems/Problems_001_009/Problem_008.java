@@ -1,13 +1,15 @@
-package Problems_01_09;
+package EulerProblems.Problems_001_009;
+
+import EulerProblems.EulerProblem;
 
 /**
  * The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
  *
  * Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
  */
-public class Problem_08 {
+public class Problem_008 implements EulerProblem {
 
-    public long calculateResult() {
+    public String calculateResult() {
 
         long largestSoFar = 0;
         int windowSize = 13;
@@ -45,6 +47,6 @@ public class Problem_08 {
             }
         }
 
-        return largestSoFar;
+        return String.valueOf(largestSoFar);
     }
 }

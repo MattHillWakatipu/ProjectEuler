@@ -1,4 +1,6 @@
-package Problems_10_19;
+package EulerProblems.Problems_10_19;
+
+import EulerProblems.EulerProblem;
 
 /**
  * Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down,
@@ -6,9 +8,9 @@ package Problems_10_19;
  *
  * How many such routes are there through a 20×20 grid?
  */
-public class Problem_15 {
+public class Problem_015 implements EulerProblem {
 
-    public long calculateResult() {
+    public String calculateResult() {
 
         int n = 20;
         long result = 1;
@@ -18,6 +20,6 @@ public class Problem_15 {
             result /= i;
         }
 
-        return result;
+        return Long.toString(result);
     }
 }

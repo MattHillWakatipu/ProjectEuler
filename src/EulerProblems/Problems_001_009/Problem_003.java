@@ -1,13 +1,15 @@
-package Problems_01_09;
+package EulerProblems.Problems_001_009;
+
+import EulerProblems.EulerProblem;
 
 /**
  * The prime factors of 13195 are 5, 7, 13 and 29.
  *
  * What is the largest prime factor of the number 600851475143 ?
  */
-public class Problem_03 {
+public class Problem_003 implements EulerProblem {
 
-    public long calculateResult() {
+    public String calculateResult() {
 
         long number = 600_851_475_143L;
         int factor = 2;
@@ -27,6 +29,6 @@ public class Problem_03 {
             }
             factor++;
         }
-        return lastFactor;
+        return String.valueOf(lastFactor);
     }
 }

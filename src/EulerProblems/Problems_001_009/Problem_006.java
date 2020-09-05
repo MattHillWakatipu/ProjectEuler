@@ -1,4 +1,6 @@
-package Problems_01_09;
+package EulerProblems.Problems_001_009;
+
+import EulerProblems.EulerProblem;
 
 /**
  * The sum of the squares of the first ten natural numbers is,
@@ -12,9 +14,9 @@ package Problems_01_09;
  *
  * Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
  */
-public class Problem_06 {
+public class Problem_006 implements EulerProblem {
 
-    public long calculateResult() {
+    public String calculateResult() {
         int limit = 100;
         int sum = 0;
         long sumOfSquares = 0;
@@ -25,6 +27,6 @@ public class Problem_06 {
         }
         long squareOfSum = (long) Math.pow(sum, 2);
 
-        return squareOfSum - sumOfSquares;
+        return String.valueOf(squareOfSum - sumOfSquares);
     }
 }

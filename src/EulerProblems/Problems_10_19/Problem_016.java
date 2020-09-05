@@ -1,4 +1,4 @@
-package Problems_10_19;
+package EulerProblems.Problems_10_19;
 
 import java.math.BigInteger;
 
@@ -7,7 +7,7 @@ import java.math.BigInteger;
  *
  * What is the sum of the digits of the number 21000?
  */
-public class Problem_16 {
+public class Problem_016 {
 
     public int calculateResult() {
 
