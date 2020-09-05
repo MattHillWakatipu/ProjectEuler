@@ -5,7 +5,7 @@ public class ProjectEuler {
 
     public static void main(String[] args) {
 
-        EulerProblem problem = new Problem_015();
+        EulerProblem problem = new Problem_017();
         System.out.println(problem.calculateResult());
     }
 }
