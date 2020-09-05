@@ -1,5 +1,5 @@
 import EulerProblems.EulerProblem;
-import EulerProblems.Problems_10_19.*;
+import EulerProblems.Problems_010_019.*;
 
 public class ProjectEuler {
 
